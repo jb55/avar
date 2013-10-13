@@ -33,8 +33,11 @@ example.get(function (err, data) {
   // cached arguments
 });
 
-// future calls to get will also wait for async call or retrieve cached
-// results instantly
+setTimeout(function () {
+  example.get(function (err, data) {
+    // err and data were retrieved from cache
+  });
+}, 2000);
 ```
 
 ## License
