@@ -35,6 +35,7 @@ example.get(function (err, data) {
 
 // future calls to get will also wait for async call or retrieve cached
 // results instantly
+```
 
 ## License
 
