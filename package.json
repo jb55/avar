@@ -1,0 +1,17 @@
+{
+  "name": "avar",
+  "description": "Async variables",
+  "version": "0.0.0",
+  "repository": {
+    "url": "git://github.com/jb55/avar.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "tap": "~0.2.5",
+    "tape": "*"
+  }
+}
