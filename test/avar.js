@@ -1,6 +1,6 @@
 
-var test = require('tape')
-var avar = require('..')
+var test = require('tape');
+var avar = require('..');
 
 function fetchOne(ret) {
   fetchOne.calls++;
@@ -20,8 +20,10 @@ test('works', function(t) {
     t.equal(v, 1);
   });
 
-  one.get(function (v) {
-    t.equal(fetchOne.calls, 1);
-    t.equal(v, 1);
-  });
+  setTimeout(function () {
+    one.get(function (v) {
+      t.equal(fetchOne.calls, 1);
+      t.equal(v, 1);
+    });
+  }, 50);
 });

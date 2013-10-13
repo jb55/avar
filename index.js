@@ -14,14 +14,14 @@ function AVar (async) {
     var xs = 1 <= arguments.length? [].slice.call(arguments, 0) : [];
     self.fetched = true;
     self.data = xs;
-    self.emitter.emit('fetched', self.data)
+    self.emitter.emit('fetched', self.data);
   });
 }
 
 AVar.prototype.get = function(asker) {
-  if (this.fetched) return asker.apply(null, self.data);
+  if (this.fetched) return asker.apply(null, this.data);
   this.emitter.on("fetched", function(args) {
     return asker.apply(null, args);
   });
-}
+};
 

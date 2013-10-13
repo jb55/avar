@@ -1,7 +1,7 @@
 {
   "name": "avar",
   "description": "Async variables",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "url": "git://github.com/jb55/avar.git"
   },
