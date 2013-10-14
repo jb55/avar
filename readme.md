@@ -1,4 +1,3 @@
-
 # avar
 
 Asyncronous variables
@@ -9,10 +8,6 @@ Asyncronous variables
 
     $ npm install avar
 
-  or
-
-    $ npm install jb55/avar
- 
 
 ## Example
 
