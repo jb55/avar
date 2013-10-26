@@ -1,0 +1,16 @@
+{
+  "name": "avar",
+  "repo": "jb55/avar",
+  "description": "Async variables",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+    "component/emitter": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ]
+}
