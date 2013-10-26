@@ -1,5 +1,10 @@
 
-var EventEmitter = require('events').EventEmitter;
+try {
+  var EventEmitter = require('events').EventEmitter;
+}
+catch (e) {
+  var EventEmitter = require('emitter');
+}
 
 module.exports = AVar;
 
